@@ -5,6 +5,7 @@ import Contact from "./Components/Contact";
 import About from "./Components/About";
 import Projects from "./Components/Projects";
 // import PageNotFound from "./Components/PageNotFound";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 import "./App.css";
 import PageNotFound from "./Components/PageNotFound";

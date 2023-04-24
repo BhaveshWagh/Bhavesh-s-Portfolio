@@ -17,6 +17,9 @@ hr {
   margin: 2rem 0rem;
 }
 
+.bold {
+  font-weight: bold;
+}
 /** spaces **/
 
 .margin-md {
@@ -44,10 +47,10 @@ hr {
 .link-primary {
   max-width: 140px;
   padding: 0.6rem 1.2rem;
-  background-color: var(--primary-color);
-  color: #fff;
   margin: 1rem auto;
   border-radius: 1rem;
+  color: #fff;
+  background-color: var(--primary-color);
 }
 
 .link-secondary {
@@ -58,6 +61,24 @@ hr {
   border: 1px solid var(--primary-color);
   color: var(--primary-color);
 }
+
+
+.link-prime {
+  max-width: 140px;
+  margin: 1rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 1rem;
+  border: 1px;                               
+  color: #fff;
+  background-color: var(--primary-color);
+}
+
+.link-prime:hover{
+  cursor: pointer;
+  color: #fff;
+}
+
+
 
 /** look into BEM naming convention for CSS **/
 
@@ -127,12 +148,10 @@ li {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* padding: 1rem; */
   padding: 20px;
   background-color: teal;
   color: #fff;
   border-bottom-left-radius: 25px;
-  
 }
 .nav-links a {
   color: #fff;
@@ -167,49 +186,6 @@ input[type="checkbox"] {
   font-size: 24px;
   user-select: none;
 }
-/* APPLYING MEDIA QUERIES */
-@media (max-width: 768px) {
-  .menu {
-    display: none;
-    position: absolute;
-    background-color: teal;
-    right: 0;
-    left: 0;
-    text-align: center;
-    /* justify-content: center; */
-    /* margin-top: 16px; */
-    margin: 15px auto;
-    max-width: 95%;
-    height: 325px;
-    /* width: 100%; */
-    border-bottom-left-radius: 25px;
-  }
-  .menu li:hover {
-    display: inline-block;
-    background-color: #4c9e9e;
-    transition: 0.3s ease;
-  }
-  .menu li + li {
-    margin-top: 15px;
-  }
-  input[type="checkbox"]:checked ~ .menu {
-    display: block;
-  }
-  .hamburger {
-    display: block;
-  }
-  /* #checkbox_toggle:checked ~ .menu i::before {
-    content: "\f00d";
-  } */
-  /* .dropdown {
-    left: 50%;
-    top: 30px;
-    transform: translateX(35%);
-  }
-  .dropdown li:hover {
-    background-color: #4c9e9e;
-  } */
-}
 
 /** header **/
 
@@ -235,7 +211,7 @@ input[type="checkbox"] {
   color: var(--primary-color);
 }
 
-.self-img{
+.self-img {
   max-width: 70%;
   width: 300px;
   display: block;
@@ -303,7 +279,78 @@ input[type="checkbox"] {
   padding-bottom: 6rem;
 }
 
-@media (max-width: 900px) {
+
+
+/* Contact Us CSS start */
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], [type=email],textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.form-container {
+  border-radius: 5px;
+  background-color: var(--offwhite-color);
+  padding: 20px;
+}
+
+/* Contact us css end Here */
+/* APPLYING MEDIA QUERIES */
+
+/* @media (max-width: 768px) {
+  .menu {
+    display: none;
+    position: absolute;
+    background-color: teal;
+    right: 0;
+    left: 0;
+    text-align: center;
+    margin: 15px auto;
+    max-width: 95%;
+    height: 325px;
+    border-bottom-left-radius: 25px;
+  }
+  .menu li:hover {
+    display: inline-block;
+    background-color: #4c9e9e;
+    transition: 0.3s ease;
+  }
+  .menu li + li {
+    margin-top: 15px;
+  }
+  input[type="checkbox"]:checked ~ .menu {
+    display: block;
+  }
+  .hamburger {
+    display: block;
+  }
+ 
+} */
+
+/* @media (max-width: 900px) {
   body {
     max-width: 95%;
     width: 100%;
@@ -321,4 +368,4 @@ input[type="checkbox"] {
   .link-primary {
     display: block;
   }
-}
+} */

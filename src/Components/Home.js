@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
+
 const Home = () => {
   return (
     <div>
@@ -13,6 +14,37 @@ const Home = () => {
           <span className="heading-inverted"> Full-Stack developer</span>
         </h1>
       </header>
+
+      <section className="section ow">
+        <div className="container container-center">
+          <h1>technologies</h1>
+          <p>
+            I'm familiar with HTML, CSS, JavaScript, Reactjs, Python, SQL,
+            BigData, AWS, GitHub and Web Hosting.
+          </p>
+        </div>
+      </section>
+
+      <section className="section">
+      <div className="container container-center">
+        <h1>projects</h1>
+        <p>
+          I like to showcase my work and thus, you can see my projects hosted
+          online.
+        </p>
+         <a className="link link-prime"  href="/projects">See Projects</a>
+      </div>
+    </section>
+
+      <section className="section ow">
+        <div classNameclass="container container-center">
+          <h1>Contact</h1>
+          <p>Hire Me</p>
+          <a className="link link-secondary" href="/contact">
+            Contact
+          </a>
+        </div>
+      </section>
       <Footer />
     </div>
   );

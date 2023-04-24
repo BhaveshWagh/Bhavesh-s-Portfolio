@@ -13,13 +13,14 @@ const About = () => {
             alt="hero"
           />
           <article class="showcase-list container container-center">
-            <h1>i'm Bhavesh Wagh</h1>
+            <h1>I'm Bhavesh Wagh</h1>
             <small>17 October 2021</small>
             <p>
               I am a final year computer engineering student. I'm interested in
               full stack development. I have a good knowledge about Python,
-              React.js, JavaScript, & C programming language, SQL & HTML/CSS .
-              I'm looking for exciting opportunity to learn more.
+              <span className="bold"> React.js, JavaScript,</span> C
+              programming language, SQL & HTML/CSS. I'm looking for exciting
+              opportunity to learn more.
             </p>
           </article>
         </li>
