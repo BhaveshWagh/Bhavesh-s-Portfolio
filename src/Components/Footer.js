@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -6,21 +7,21 @@ const Footer = () => {
       <div className="footer-header">social media presence</div>
       <ul className="social-links list-non-bullet">
         <li className="list-item-inline">
-          <a className="link" href="https://github.com/BhaveshWagh">
+          <Link className="link" to="https://github.com/BhaveshWagh">
             {" "}
             github{" "}
-          </a>
+          </Link>
         </li>
         <li className="list-item-inline">
-          <a className="link" href="/">
+          <Link className="link" to="/">
             {" "}
             twitter{" "}
-          </a>
+          </Link>
         </li>
         <li className="list-item-inline">
-          <a className="link" href="https://www.linkedin.com/in/bhavesh-wagh27">
+          <Link className="link" to="https://www.linkedin.com/in/bhavesh-wagh27">
             linkedin
-          </a>
+          </Link>
         </li>
       </ul>
     </footer>

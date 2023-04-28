@@ -4,7 +4,7 @@ import Footer from "./Footer";
 
 const Home = () => {
   return (
-    <div>
+    <React.Fragment>
       <Header isActive={"Home"} />
 
       <header className="hero">
@@ -15,15 +15,7 @@ const Home = () => {
         </h1>
       </header>
 
-      <section className="section ow">
-        <div className="container container-center">
-          <h1>technologies</h1>
-          <p>
-            I'm familiar with HTML, CSS, JavaScript, Reactjs, Python, SQL,
-            BigData, AWS, GitHub and Web Hosting.
-          </p>
-        </div>
-      </section>
+      
 
       <section className="section">
       <div className="container container-center">
@@ -46,7 +38,7 @@ const Home = () => {
         </div>
       </section>
       <Footer />
-    </div>
+    </React.Fragment>
   );
 };
 
